@@ -10,19 +10,9 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
  </head>
 <body>
-    <!--script botão toggleDiv continuação de "sobre nós" -->
-    <script type="text/javascript">
-        function toggleDiv() {
-            var div = document.getElementById("back");
-            if (div.style.display === "none") {
-                div.style.display = "block"; // Exibe a div
-            } 
-            else {
-                div.style.display = "none";  // Oculta a div
-            }
-        }
-    </script>
-
+    <script src="/assets/js/botoes.js"></script> <!--script de botões com função no front-end do site -->
+    <script src="/assets/js/carrosseis.js"></script><!--script dos carrosseis do site -->
+   
     <!--Navbar-->
     <header>
         <div class="header">
@@ -51,37 +41,35 @@
 <main>
     <!--Section de banners em carrossel-->
     <section class="banner">
-        <div class="sliders" style="margin-left:0;">
+        <div class="background-carrossel"></div> <!--plano de fundo pendulo-->
+        <div class="carrossel-overlay"></div> <!--filtro escuro para melhorar visibilidade do texto-->
+        <div class="sliders" style="margin-left:0;">        
             <div class="slide"> <!--primeiro texto carrossel-->
                 <div class="slidearea">
                     <h1>Uma empresa que tem política basilar na sinergia para geração de soluções</h1>
-                    <a href="" class="button">SAIBA MAIS</a>
                 </div>
             </div>
-            
+        
             <div class="slide"><!--segundo texto carrossel-->
                 <div class="slidearea">
-                    <h1>Design is about<br/><span>Teste</span></h1>
-                    <h2>Call Us: +00 0 1234 5678</h2>
-                    <a href="" class="button">Get in touch!</a>
+                    <h1>UMA EMPRESA QUE AVALIA PASSOS ALÉM DO QUADRANTE SEGUINTE PARA ENCONTRAR SOLUÇÕES <br/></h1>
                 </div>
             </div>
-            
+        
             <div class="slide"><!--terceiro texto carrossel-->
                 <div class="slidearea">
-                    <h1>Design is about<br/><span>Algo</span></h1>
-                    <h2>Call Us: +00 0 1234 5678</h2>
-                    <a href="" class="button">Get in touch!</a>
+                    <h1>UMA EMPRESA QUE COADUNA A DINÂMICA DA GERAÇÃO DO PROBLEMA AO ENCONTRO DE SOLUÇÕES<br/></h1>
                 </div>
             </div>
         </div>
+
+        <!-- Indicadores do carrossel -->
         <div class="sliders-pointers">
-            <div class="pointer active"></div>
+            <div class="pointer"></div>
             <div class="pointer"></div>
             <div class="pointer"></div>
         </div>
     </section>
-
     <!--Section Sobre a empresa, região de "sobre nós"-->
     <section class="default light">
         <div class="section-body">
