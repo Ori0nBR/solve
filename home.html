@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
     <title>Solve Consultoria e Projetos</title>
@@ -7,41 +7,49 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
  </head>
 <body>
-<script type="text/javascript">
-    function showDiv() {
-        document.getElementById("back").style.display = "block";
-    }
-</script>
+    <!--script botão toggleDiv continuação de "sobre nós" -->
+    <script type="text/javascript">
+        function toggleDiv() {
+            var div = document.getElementById("back");
+            if (div.style.display === "none") {
+                div.style.display = "block"; // Exibe a div
+            } 
+            else {
+                div.style.display = "none";  // Oculta a div
+            }
+        }
+    </script>
 
-
-
-
-<header>
-    <div class="header">
-        <div class="logo">
-            <div class="logoimg">
-           <img class="logoimg" src="assets/images/logo.png" />
-		</div>
-        </div>
-        <div class="menu">
-            <img class="menu-opener" src="assets/images/menu.png" />
-            <nav>
-                <ul>
-                    <li class="active"><a href="">Home</a></li>
-                    <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Nossos Projetos</a></li>
-                    <li><a href="">Clientes e Parceiros</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </nav>
+    <!--Navbar-->
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div class="logoimg">
+                <img class="logoimg" src="assets/img/logo.png" />
+		        </div>
+            </div>
+            <div class="menu">
+                <img class="menu-opener" src="assets/images/menu.png" />
+                <nav>
+                    <!--Ao clicar nos links rolará até a região da página que o aborda-->
+                    <ul>
+                        <li class="active"><a href="">Home</a></li>
+                        <li><a href="">Sobre Nós</a></li>
+                        <li><a href="">Serviços</a></li>
+                        <li><a href="">Nossos Projetos</a></li>
+                        <li><a href="">Clientes e Parceiros</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Intranet</a></li> <!--Botão chamando Popup para Login-->
+                    </ul>
+                </nav>
         </div>
     </div>
 </header>
 <main>
+    <!--Section de banners em carrossel-->
     <section class="banner">
         <div class="sliders" style="margin-left:0;">
             <div class="slide">
@@ -71,31 +79,43 @@
         </div>
     </section>
 
+    <!--Section Sobre a empresa, região de "sobre nós"-->
     <section class="default light">
-        <div class="section-title"></div>
-        <div class="section-desc"></div>
         <div class="section-body">
-
             <div class="section-aboutus">
+                <!--Lado esquerdo da div sobre nós-->
                 <div class="section-aboutus--left">
-                     <p style="text-transform: uppercase; font-weight: 600; color:#AAA;">Sobre a empresa </p>
-			<H1 style="font-family: 'Oswald'; text-transform: uppercase; font-weight: 700; font-size:48px; line-height:60px; margin-top:30px;     ">transformamos desafios<BR> em oportunidades <BR>e objetivos em conquistas.</H1>	
-
-                    <span class="regua"></span> 
+                     <p>Sobre a empresa </p>
+			         <h1>transformamos desafios<BR> em oportunidades <BR>e objetivos em conquistas.</h1>	
+                     <span class="regua"></span> 
                 </div>
+                <!--Lado Direito da div sobre nós-->
                 <div class="section-aboutus--right">
-                    <p>Na Solve Consultoria e Projetos, somos especialistas em oferecer soluções estratégicas, táticas e operacionais para transformar desafios em resultados. Combinando expertise em consultoria gerenciamento de obras e serviços de facilities, estamos comprometidos em ajudar nossos clientes a alcançar a excelência.
-</br></br>
-Nossa missão é criar valor por meio de estratégias personalizadas e execução impecável. Trabalhamos lado a lado com nossos clientes, entendendo suas necessidades específicas e desenvolvendo soluções sob medida que otimizam processos, reduzem custos e garantem ambientes de trabalho seguros, funcionais e inovadores.
-</br></br>
-Com uma equipe multidisciplinar de profissionais experientes e altamente capacitados, proporcionamos uma visão 360º que conecta planejamento estratégico à execução prática. Seja no Gerenciamento de Obras, na Gestão de Espaços ou na Gestão de Facilites garantimos resultados que superam as expectativas.
-</p>
-<div class="slide" style="font-size:20px;" > <a href="javascript:showDiv();"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+                    <p> Na Solve Consultoria e Projetos, somos especialistas em oferecer soluções estratégicas,
+                        táticas e operacionais para transformar desafios em resultados. Combinando expertise em
+                        consultoria gerenciamento de obras e serviços de facilities, estamos comprometidos em
+                        ajudar nossos clientes a alcançar a excelência.
+                        </br></br>
+                        Nossa missão é criar valor por meio de estratégias personalizadas e execução impecável. 
+                        Trabalhamos lado a lado com nossos clientes, entendendo suas necessidades específicas e
+                        desenvolvendo soluções sob medida que otimizam processos, reduzem custos e garantem 
+                        ambientes de trabalho seguros, funcionais e inovadores.
+                        </br></br>
+                        Com uma equipe multidisciplinar de profissionais experientes e altamente capacitados, 
+                        proporcionamos uma visão 360º que conecta planejamento estratégico à execução prática. 
+                        Seja no Gerenciamento de Obras, na Gestão de Espaços ou na Gestão de Facilites garantimos
+                        resultados que superam as expectativas.
+                    </p>
+                <!--Botão para mais detalhes-->
+                <div class="slide" style="font-size:20px;" >
+                    <a href="javascript:toggleDiv();">
+                        <i class="fa fa-angle-down" aria-hidden="true">
+                        </i>
+                    </a>
                 </div>
-
-
-
             </div>
+        </div>
+        
 <div class="section-footer">
  
 <div class="slide2" id="back"><p>
