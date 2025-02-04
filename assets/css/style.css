@@ -171,6 +171,7 @@ header {
 .default .section-footer {
     max-width:1140px;
     padding-top: 50px;
+    align:"justify";
     margin:auto;
     text-align: center;
 }
@@ -293,6 +294,7 @@ CSS DE ÁREAS ESPECÍFICAS
 
 .section-aboutus--right p {
     font-size:14px;
+    
     font-weight: 300;
     font-family: 'Montserrat';
     text-align: justify;
@@ -303,6 +305,28 @@ CSS DE ÁREAS ESPECÍFICAS
     width:480px;
     box-shadow:0px 5px 10px #333;
 }
+
+.slide{
+  display: block;cursor: pointer;
+
+}
+.slide a 
+{
+color:#000;
+
+}
+.slide2{
+  display: none;
+    font-size:14px;
+    
+    font-weight: 300;
+    font-family: 'Montserrat';
+    text-align: justify;
+    line-height:30px;
+
+}
+
+
 
 
 
@@ -316,6 +340,7 @@ CSS DE ÁREAS ESPECÍFICAS
 
     padding:15px;
 background-color:rgba(0, 0, 0, 0.5);
+filte
 }
 
 .section-service img:hover {
@@ -327,7 +352,7 @@ background-color: blue;
     width: 90%;
     cursor: pointer;
     box-shadow: inset 0px 0px 100px;
-     
+    filter: 
 }
 
 .text-service{
@@ -343,7 +368,7 @@ background-color: blue;
 
 
 .section-service:first-child {
-    border-left:1px solid #333;
+  /*  border-left:1px solid #333; */
 }
 .section-service h4 {
     margin-top:20px;
