@@ -116,7 +116,7 @@ header {
 .background-carrossel {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 85%;
     background: url(/media/pendulo.gif) no-repeat center center;
     background-size:cover;
     z-index: 1;
@@ -125,7 +125,7 @@ header {
 .carrossel-overlay {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 85%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
