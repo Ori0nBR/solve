@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRANET SOLVE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #0079bf;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-container button:hover {
+            background-color: #0061a8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login com Trello</h2>
+        <button onclick="loginTrello()">Login</button>
+    </div>
+
+    <script>
+        // Função para iniciar o login com Trello
+        function loginTrello() {
+            const API_KEY = 'a609fe29a69caa420fd5795573a43a1d'; // Substitua pela sua chave da API Trello
+            const REDIRECT_URI = 'http://localhost:5500/callback.html'; // Substitua pela URL de callback da sua página
+
+            const authUrl = `https://trello.com/1/authorize?response_type=token&key=${API_KEY}&return_url=${REDIRECT_URI}&callback_method=fragment&scope=read,write,account&expiration=never`;
+
+            // Redireciona o usuário para a página de autenticação do Trello
+            window.location.href = authUrl;
+        }
+    </script>
+    
+</body>
+</html>

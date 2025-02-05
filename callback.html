@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Trello</title>
+</head>
+<body>
+    <h2>Autenticação com Trello</h2>
+    <p>Aguarde, estamos processando sua autenticação...</p>
+
+    <script>
+        // Função para capturar o token da URL de callback
+        function getTokenFromUrl() {
+            const params = new URLSearchParams(window.location.hash.replace("#", "?"));
+            return params.get("token");
+        }
+
+        // Verifica se há token na URL e redireciona para a página principal do Trello ou outro destino
+        window.onload = function() {
+            const token = getTokenFromUrl();
+            if (token) {
+                // Armazena o token localmente (no localStorage)
+                localStorage.setItem("trello_token", token);
+
+                // Redireciona o usuário para o Trello ou para uma página interna do seu site
+                window.location.href = "https://trello.com"; // Ou substitua com a URL que desejar
+            } else {
+                alert("Falha na autenticação. Tente novamente.");
+                window.location.href = "login.html"; // Redireciona de volta para a página de login
+            }
+        };
+    </script>
+</body>
+</html>

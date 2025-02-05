@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Intranet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #0079bf;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-container button:hover {
+            background-color: #0061a8;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Solve Intranet</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuário" required />
+            <input type="password" id="password" placeholder="Senha" required />
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="error-message" id="errorMessage" style="display:none;">Credenciais inválidas. Tente novamente.</p>
+    </div>
+
+    <script>
+        const validCredentials = {
+            username: 'colaborador', // Usuário fictício
+            password: 'senha123' // Senha fictícia
+        };
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Verifica as credenciais
+            if (username === validCredentials.username && password === validCredentials.password) {
+                // Redireciona para a página de login do Trello
+                window.location.href = "intranet.html"; // A página onde inicia o login com o Trello
+            } else {
+                // Exibe uma mensagem de erro se as credenciais forem inválidas
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        });
+    </script>
+    
+</body>
+</html>

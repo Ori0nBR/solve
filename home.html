@@ -12,31 +12,37 @@
 <body>
     <script src="/assets/js/botoes.js"></script> <!--script de botões com função no front-end do site -->
     <script src="/assets/js/carrosseis.js"></script><!--script dos carrosseis do site -->
-   
     <!--Navbar-->
-    <header>
-        <div class="header">
-            <div class="logo">
-                <div class="logoimg">
-                <img class="logoimg" src="assets/img/logo.png" />
-		        </div>
-            </div>
-            <div class="menu">
-                <img class="menu-opener" src="assets/images/menu.png" />
-                <nav>
-                    <!--Ao clicar nos links rolará até a região da página que o aborda-->
-                    <ul>
-                        <li class="active"><a href="">Home</a></li>
-                        <li><a href="">Sobre Nós</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Nossos Projetos</a></li>
-                        <li><a href="">Clientes e Parceiros</a></li>
-                        <li><a href="">Contato</a></li>
-                        <li><a href="">Intranet</a></li> <!--Botão chamando Popup para Login-->
-                    </ul>
-                </nav>
+<header>
+    <div class="header">
+        <div class="logo">
+            <div class="logoimg">
+            <img class="logoimg" src="assets/img/logo.png" />
+		    </div>
         </div>
-    </div>
+        <div class="menu">
+            <img class="menu-opener" src="assets/images/menu.png" />
+            <nav>
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="#snos">Sobre Nós</a></li>
+                    <li><a href="#serv">Serviços</a></li>
+                    <li><a href="">Nossos Projetos</a></li>
+                    <li><a href="">Clientes e Parceiros</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="login-colaboradores.html">Intranet</a></li> <!-- Botão chamando Popup para Login -->
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Modal de Login -->
+        <div id="loginModal" style="display: none;">
+            <div class="modal-content">
+                <h2>Entrar com Trello</h2>
+                <button onclick="loginTrello()">Login</button>
+                <button onclick="closeModal()">Fechar</button>
+            </div>
+        </div>
 </header>
 <main>
     <!--Section de banners em carrossel-->
@@ -73,7 +79,7 @@
     <!--Section Sobre a empresa, região de "sobre nós"-->
     <section class="default light">
         <div class="section-body">
-            <div class="section-aboutus">
+            <div class="section-aboutus" id="snos">
                 <!--Lado esquerdo da div sobre nós-->
                 <div class="section-aboutus--left">
                      <p>Sobre a empresa </p>
@@ -106,39 +112,31 @@
                 </div>
             </div>
         </div>
-
-<div class="section-footer">
- 
-<div class="slide2" id="back"><p>
-Nosso compromisso com a qualidade, ética e inovação nos torna um parceiro de confiança para empresas de diversos setores. Na Solve Consultoria e Projetos, não apenas oferecemos serviços; criamos relações de longo prazo fundamentadas em excelência e resultados tangíveis.
-</br></br>
-<b>Nossa Visão:</b></br>
-Ser referência no mercado de consultoria e serviços de facilities, reconhecida pela entrega de soluções inovadoras e pelo impacto positivo nos negócios de nossos clientes.
-</br></br>
-<b>Nossos Valores:</b></br>
-Excelência: Buscamos superar expectativas em cada projeto.
-Parceria: Construímos relacionamentos baseados em confiança e colaboração.
-Sustentabilidade: Priorizamos práticas que respeitam o meio ambiente.
-Inovação: Investimos em tecnologia e ideias criativas para melhorar continuamente.
-</p>
-
-
-
-</ div>
-
-
-</ div>
-
-        </div>
-
-
-
-
+    <div class="section-footer">
+        <div class="slide2" id="back">
+            <p>Nosso compromisso com a qualidade, ética e inovação nos torna um parceiro
+                de confiança para empresas de diversos setores. Na Solve Consultoria e Projetos,
+                não apenas oferecemos serviços; criamos relações de longo prazo fundamentadas 
+                em excelência e resultados tangíveis.
+                </br></br>
+            <b>Nossa Visão:</b>
+                </br>
+                Ser referência no mercado de consultoria e serviços de facilities, reconhecida 
+                pela entrega de soluções inovadoras e pelo impacto positivo nos negócios de nossos clientes.
+                </br></br>
+            <b>Nossos Valores:</b>
+                </br>
+                Excelência: Buscamos superar expectativas em cada projeto.
+                Parceria: Construímos relacionamentos baseados em confiança e colaboração.
+                Sustentabilidade: Priorizamos práticas que respeitam o meio ambiente.
+                Inovação: Investimos em tecnologia e ideias criativas para melhorar continuamente.
+                </p>
+        </div>              
     </section>
 
     <section class="default dark">
    
-        <div class="section-body">
+        <div class="section-body" id="serv">
 
 <p style="text-transform: uppercase; font-weight: 600; color:#AAA;  font-size:16px;">Serviços </p>
 <span class="regua" style="margin-bottom:50px;"></span>
