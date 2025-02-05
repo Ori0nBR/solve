@@ -1,0 +1,108 @@
+.g-1, .g-2, .g-3, .g-4, .g-5, .g-6, .g-7, .g-8, .g-9, .g-10, .g-11, .g-12 {
+    cursor: pointer;
+}
+
+.g-m-1, .g-m-2, .g-m-3, .g-m-4, .g-m-5, .g-m-6, .g-m-7, .g-m-8, .g-m-9, .g-m-10, .g-m-11, .g-m-12 {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.galery-modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid none;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-height: 90%;
+    overflow-y: auto;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: modalExpandIn 0.6s ease-out forwards;
+}
+
+@keyframes modalExpandIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes modalExpandOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+.g-m-1.show, .g-m-2.show, .g-m-3.show, .g-m-4.show, .g-m-5.show, .g-m-6.show, .g-m-7.show, .g-m-8.show, .g-m-9.show, .g-m-10.show, .g-m-11.show, .g-m-12.show {
+    display: block;
+}
+
+.g-m-1.hide, .g-m-2.hide, .g-m-3.hide, .g-m-4.hide, .g-m-5.hide, .g-m-6.hide, .g-m-7.hide, .g-m-8.hide, .g-m-9.hide, .g-m-10.hide, .g-m-11.hide, .g-m-12.hide {
+    display: none;
+}
+
+.galery-close {
+    float: right;
+    font-size: 28px;
+}
+
+.galery-close:hover, .galery-close:focus {
+    color: #3333;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title-galery {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle-galery {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.img-galery {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    width: 100%;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-galery {
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.img-galery .photo-galery {
+    height: 350px;
+}
