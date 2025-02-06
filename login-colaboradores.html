@@ -4,62 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Intranet</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #000000;
-        }
-
-        .login-container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-
-        .login-container h2 {
-            margin-bottom: 20px;
-        }
-
-        .login-container input {
-            padding: 10px;
-            margin: 10px 0;
-            width: 100%;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .login-container button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #bf8300;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .login-container button:hover {
-            background-color: #0061a8;
-        }
-
-        .error-message {
-            color: red;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/login.css">
 </head>
 <body>
-    
+    <div class="logo-container">
+        <img src="assets/img/logo.png" alt="Logo" />
+    </div>
     <div class="login-container">
-        <h2>Solve Intranet</h2>
+        <h2>Intranet</h2>
         <form id="loginForm">
             <input type="text" id="username" placeholder="Usuário" required />
             <input type="password" id="password" placeholder="Senha" required />
