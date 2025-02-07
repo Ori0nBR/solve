@@ -26,6 +26,7 @@
     opacity: 0;
     transform: scale(0.8);
     animation: modalExpandIn 0.6s ease-out forwards;
+    justify-content: center;
 }
 
 @keyframes modalExpandIn {

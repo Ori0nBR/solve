@@ -23,11 +23,17 @@ header {
     align-items:center;
 }
 .logo {
-    width:100px;
+    display: flex;
+    justify-content: space-between;
+    width:140px;
+    align-items: center;
+    gap: 10px;
 }
 .logoimg {
-
     height:70px; 
+}
+.logotext {
+    height: 60px;
 }
 .menu-opener {
     display:none;
@@ -132,6 +138,10 @@ header {
     z-index: 3;
 }
 
+.slidearea{
+    max-width:1140px;
+}
+
 .background-carrossel {
     position: absolute;
     width: 100%;
@@ -154,37 +164,6 @@ header {
     font-weight: bold;
     font-size:55px;
 }
-.banner h1 span {
-    color:#FF992B;
-}
-.banner h2 {
-    text-transform: uppercase;
-    margin-top:20px;
-}
-.banner .sliders-pointers {
-    width:100vw;
-    height:20px;
-    position:absolute;
-    margin-top:-50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-}
-.banner .pointer {
-    width:15px;
-    height:15px;
-    border:2px solid #B28756;
-    border-radius:8px;
-    margin-left:5px;
-    margin-right:5px;
-    cursor:pointer;
-}
-.banner .pointer.active {
-    background-color:#B28756;
-}
-
-
 .default {
     padding-top:50px;
     padding-bottom:50px;
@@ -364,7 +343,6 @@ CSS DE ÁREAS ESPECÍFICAS
 
 .slide{
   display: block;
-  cursor: pointer;
 
 }
 .slide a 
