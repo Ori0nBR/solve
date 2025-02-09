@@ -15,18 +15,22 @@
 
 .galery-modal-content {
     background-color: white;
-    margin: 5% auto;
+    margin: 2% auto;
     padding: 20px;
     border: 1px solid none;
     width: 80%;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-height: 90%;
+    max-height: 90vh;
+    height: auto;
     overflow-y: auto;
     opacity: 0;
     transform: scale(0.8);
     animation: modalExpandIn 0.6s ease-out forwards;
     justify-content: center;
+    text-align: justify;
+    position: relative;
+    top: -10;
 }
 
 @keyframes modalExpandIn {
@@ -77,33 +81,75 @@
 
 .title-galery {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.subtitle-galery {
-    text-align: justify;
-    margin-top: 10px;
 }
 
 .img-galery {
-    display: flex;
-    justify-content: space-between;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
+    position: relative;
     width: 100%;
+    margin: auto;
     overflow: hidden;
-    justify-items: center;
-    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: calc(100vh - 180px);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel div{
+    width: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
 }
 
 .photo-galery {
-    width: 100%;
-    height: 100%;
-    display: block;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
 }
 
-.img-galery .photo-galery {
-    height: 350px;
+button.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button.arrow:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .galery-modal-content {
+        width: 90%;  /* Tornar o modal um pouco menor em telas pequenas */
+    }
+
+    .photo-galery {
+        max-width: 100%;  /* Garantir que as imagens caibam dentro do modal */
+        max-height: 60vh;
+    }
+
+    .arrow {
+        padding: 8px;  /* Botões de seta menores para telas menores */
+    }
 }

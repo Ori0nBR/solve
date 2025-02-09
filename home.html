@@ -29,7 +29,7 @@
                     <li class="active"><a href="">Home</a></li>
                     <li><a href="#snos">Sobre Nós</a></li>
                     <li><a href="#serv">Serviços</a></li>
-                    <li><a href="">Nossos Projetos</a></li>
+                    <li><a href="#nproj">Nossos Projetos</a></li>
                     <li><a href="">Clientes e Parceiros</a></li>
                     <li><a href="">Contato</a></li>
                     <li><a href="login-colaboradores.html">Intranet</a></li> <!-- Botão chamando Popup para Login -->
@@ -63,9 +63,9 @@
         </div>
     </section>
     <!--Section Sobre a empresa, região de "sobre nós"-->
-    <section class="default light">
+    <section class="default light" id="snos">
         <div class="section-body">
-            <div class="section-aboutus" id="snos">
+            <div class="section-aboutus">
                 <!--Lado esquerdo da div sobre nós-->
                 <div class="section-aboutus--left">
                      <p>Sobre a empresa </p>
@@ -119,8 +119,8 @@
                 </p>
         </div>              
     </section>
-    <section class="default dark">
-        <div class="section-body" id="serv">
+    <section class="default dark" id="serv">
+        <div class="section-body">
             <h3>Serviços </h3>
             <span class="regua" style="margin-bottom:50px;"></span>
 
@@ -143,7 +143,7 @@
         </div>
     </section>
 
-    <section class="default light">
+    <section class="default light" id="nproj">
         <div class="section-title">NOSSOS PROJETOS</div>
         <div class="section-body">
             <div class="section-projects">
@@ -152,10 +152,10 @@
                        <div class="section-projects--photo g-1">
                         <div class="section-projects--photoarea">
                             <div class="section-projects--photoinfo">
-                                <h5>ABOUT</h5>
-                                <p>Vestibulum porta aliquet risus</p>
+                                <h5>Assessoramento</h5>
+                                <p>Contrato de Construção</p>
                             </div>
-                            <img src="media/foto1.jpg" />
+                            <img src="assets/img/galery/Imagem1-2.jpg" />
                         </div>
                     </div>
                     <!--Modal foto 1-->
@@ -164,11 +164,16 @@
                             <span class="galery-close">x</span>
                             <h3 class="title-galery">Construção de 440 Unidades Habitacionais - Inhaúma, Rio de Janeiro/RJ.</h3>
                             <div class="img-galery">
-                                <div><img class="photo-galery" src="/assets/img/galery/Imagem1-1.jpg"/></div>
-
-                            </div>
-                            <p class="subtitle-galery">Assessoramento ao Gerenciamento de Obra, Elaboração de Projetos Executivos e Assessoramento Contratual do Contrato de Construção de 440 Unidades Habitacionais localizadas à Av. Itaoca, 2226, Inhaúma, Rio de Janeiro/RJ.
-                                Instituições beneficiadas: Secretaria de Habitação e Interesse Social (SEHIS) e Abre Construções</p>
+                                <button class="prev arrow">&#10094;</button>
+                                <div class="carousel">
+                                    <div><img class="photo-galery" src="/assets/img/galery/Imagem1-1.jpg" alt="Imagem 1"/></div>
+                                    <div><img class="photo-galery" src="/assets/img/galery/Imagem1-2.jpg" alt="Imagem 2"/></div>
+                                    <div><img class="photo-galery" src="/assets/img/galery/Imagem1-3.jpg" alt="Imagem 3"/></div>
+                                </div>
+                                <button class="next arrow">&#10095;</button>                                
+                            </div>                            
+                            <p class="p-galery">Assessoramento ao Gerenciamento de Obra, Elaboração de Projetos Executivos e Assessoramento Contratual do Contrato de Construção de 440 Unidades Habitacionais localizadas à Av. Itaoca, 2226, Inhaúma, Rio de Janeiro/RJ.</p>
+                            <p class="p-galery">Instituições beneficiadas: Secretaria de Habitação e Interesse Social (SEHIS) e Abre Construções</p>
                         </div>
                     </div>
                     <!--Foto 2-->
@@ -185,13 +190,17 @@
                     <div class="g-m-2">
                         <div class="galery-modal-content">
                             <span class="galery-close">x</span>
-                            <h4 class="title-galery">Assessoramento ao Gerenciamento da Obra e Assessoramento Contratual da Reforma das Fachadas, Coberturas, Reservatórios e Rede Elétrica de 12 Blocos do Condomínio Arthur Rios em Campo Grande, Rio de Janeiro/RJ.</h4>
+                            <h3 class="title-galery">Construção de 440 Unidades Habitacionais - Inhaúma, Rio de Janeiro/RJ.</h3>
                             <div class="img-galery">
-                                <div><img class="photo-galery" src="/assets/img/galery/Imagem2-1.jpg"/></div>
-                                <div><img class="photo-galery" src="/assets/img/galery/Imagem2-2.jpg"/></div>
-                            </div>
-                            <p class="subtitle-galery"></p>
-                            <small class="subtitle-galery">Instituições beneficiadas: Companhia Estadual de Habitação (CEHAB) e Abre Construções.</small>
+                                <button class="prev arrow">&#10094;</button>
+                                <div class="carousel">
+                                    <div><img class="photo-galery" src="/assets/img/galery/Imagem2-1.jpg" alt="Imagem 1"/></div>
+                                    <div><img class="photo-galery" src="/assets/img/galery/Imagem2-2.jpg" alt="Imagem 2"/></div>
+                                </div>
+                                <button class="next arrow">&#10095;</button>                                
+                            </div>                            
+                            <p class="p-galery">Assessoramento ao Gerenciamento de Obra, Elaboração de Projetos Executivos e Assessoramento Contratual do Contrato de Construção de 440 Unidades Habitacionais localizadas à Av. Itaoca, 2226, Inhaúma, Rio de Janeiro/RJ.</p>
+                            <p class="p-galery">Instituições beneficiadas: Secretaria de Habitação e Interesse Social (SEHIS) e Abre Construções</p>
                         </div>
                     </div>
                     <!--Foto 3-->
