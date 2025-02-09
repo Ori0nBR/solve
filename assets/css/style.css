@@ -508,6 +508,11 @@ background-color: blue;
     padding-top:50px;
     padding-bottom:50px;
 }
+
+.section-title h1{
+    color: #ffffff;
+}
+
 .section-team {
     overflow:hidden;
     max-width:880px;
