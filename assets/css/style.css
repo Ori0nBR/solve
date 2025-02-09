@@ -125,21 +125,19 @@ header {
     background-color:rgba(0, 0, 0, 0.8);
 }
 .banner .slidearea {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    justify-content: center;
     height:100%;
-    font-family: 'Oswald';
+    width: 100%;
+    max-width:1140px;
+    margin: 0 auto;
     text-align: center;
+    align-items: center;
+    font-family: 'Oswald';
     position: relative;
     overflow: hidden;
-    justify-content: center;
-    align-items:center;
     color:#FFF;
     z-index: 3;
-}
-
-.slidearea{
-    max-width:1140px;
 }
 
 .background-carrossel {
@@ -159,7 +157,9 @@ header {
     z-index: 2;
 }
 
-.banner h1 {
+.t-b {
+    margin: 0;
+    line-height: 1.2;
     text-transform: uppercase;
     font-weight: bold;
     font-size:55px;
