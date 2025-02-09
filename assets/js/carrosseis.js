@@ -9,10 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateSlidePosition() {
         slider.style.transition = "margin-left 1s ease-in-out"; // Transição suave
         slider.style.marginLeft = `-${currentIndex * 100}%`; // Desloca os slides de acordo com o índice
-        // Atualiza os indicadores (pointers)
-        pointers.forEach((pointer, index) => {
-            pointer.classList.toggle("active", index === currentIndex);
-        });
+
     }
 
     // Função para mostrar o próximo slide (com transições limitadas)
@@ -40,10 +37,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(limitedTransitions, 5000);
 
     // Adiciona evento de clique nos pointers para navegação manual
-    pointers.forEach((pointer, index) => {
-        pointer.addEventListener("click", () => {
-            currentIndex = index;
-            updateSlidePosition();
-        });
-    });
+
 });
