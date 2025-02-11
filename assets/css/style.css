@@ -514,6 +514,7 @@ background-color: blue;
 .section-title h1{
     color: #ffffff;
     padding-bottom: 40px;
+    
 }
 
 .section-team {
@@ -521,6 +522,10 @@ background-color: blue;
     justify-content: center; /* Centraliza na página */
     gap: 40px; /* Espaço entre os cards */
     flex-wrap: wrap; /* Permite quebrar linha caso necessário */
+}
+
+.section-team p{
+    text-align: center;
 }
 
 .section-team .sliders {
@@ -596,6 +601,17 @@ background-color: blue;
 .section-testimonials {
     overflow:hidden;
 }
+
+.section-title-black h1{
+    color: #000000;
+    padding-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
 .section-testimonials .sliders {
     width:1000vw;
     height:100%;
@@ -614,7 +630,7 @@ background-color: blue;
 }
 
 .section-testimonials--foto {
-    width: 400px;
+    width: 500px;
     border-radius: 10%;
     padding-top: 20px;
 }
