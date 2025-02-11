@@ -14,7 +14,7 @@
 }
 
 .galery-modal-content {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 2% auto;
     border: 1px solid none;
     width: 50vw;
@@ -28,7 +28,9 @@
     top: -10;
     overflow-y: auto;
     border-radius: 8px;
-    padding: 20px;
+    padding: 20px;f
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 @keyframes modalExpandIn {
@@ -140,7 +142,6 @@ button.arrow {
 }
 
 .p-galery {
-    color: #333;
     font-size: 14px;
     text-align: justify;
     line-height: 30px;
