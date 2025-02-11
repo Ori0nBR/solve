@@ -476,6 +476,7 @@ background-color: blue;
 .section-projects--photoarea img {
     width:inherit;
     height:inherit;
+    border-radius: 8px;
 }
 .section-projects--photoinfo {
     position:absolute;
@@ -494,6 +495,7 @@ background-color: blue;
 }
 .section-projects--photoarea:hover .section-projects--photoinfo {
     display:flex;
+    border-radius: 8px;
 }
 
 
