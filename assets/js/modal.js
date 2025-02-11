@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const modals = document.querySelectorAll('.g-m-1, .g-m-2, .g-m-3, .g-m-4, .g-m-5, .g-m-6, .g-m-7, .g-m-8, .g-m-9, .g-m-10, .g-m-11, .g-m-12');
     const closeBtns = document.querySelectorAll('.galery-close');
     
-    // Abrir e fechar as modais
     function hideAllWindows() {
         modals.forEach(function(modal) {
             modal.classList.remove('show');
@@ -21,6 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
         const content = windowElement.querySelector('.galery-modal-content');
         content.style.opacity = '1';
         content.style.transform = 'scale(1)';
+        resetCarousel(windowElement);
+    }
+
+    function resetCarousel(modal) {
+        const carousel = modal.querySelector('.carousel');
+        const images = carousel.querySelectorAll('div');
+        currentIndex = 0;
+        carousel.style.transform = `translateX(0%)`;
     }
 
     photos.forEach(function(photo) {
@@ -45,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Carrossel
     let currentIndex = 0;
 
     modals.forEach(function(modal) {
@@ -74,12 +80,14 @@ document.addEventListener("DOMContentLoaded", function() {
             showImage(currentIndex - 1);
         });
 
-        // Navegação com as teclas do teclado
         window.addEventListener('keydown', (event) => {
             if (event.key === 'ArrowRight') {
                 showImage(currentIndex + 1); 
             } else if (event.key === 'ArrowLeft') { 
                 showImage(currentIndex - 1);
+            }
+            if (event.key === 'Escape') {
+                hideAllWindows();
             }
         });
     });
