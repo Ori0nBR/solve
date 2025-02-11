@@ -14,7 +14,7 @@
 }
 
 .galery-modal-content {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 1);
     margin: 2% auto;
     border: 1px solid none;
     width: 50vw;
@@ -28,9 +28,7 @@
     top: -10;
     overflow-y: auto;
     border-radius: 8px;
-    padding: 20px;f
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    padding: 20px;
 }
 
 @keyframes modalExpandIn {
@@ -135,17 +133,26 @@ button.arrow {
 }
 
 .title-galery {
+    text-align: center;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     margin-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .p-galery {
     font-size: 14px;
     text-align: justify;
-    line-height: 30px;
+    line-height: 15px;
     font-weight: 300;
+    margin-top: 10px;
 }
 
 button.arrow:hover{
