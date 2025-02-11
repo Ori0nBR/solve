@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
  </head>
 <body>
     <script src="/assets/js/jquery.js" defer></script>
@@ -16,6 +17,8 @@
     <script src="/assets/js/botoes.js"></script> <!--script de botões com função no front-end do site -->
     <script src="/assets/js/carrosseis.js"></script><!--script dos carrosseis do site -->
     <!--Navbar-->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
 <header>
     <div class="header">
         <div class="logo">
@@ -518,31 +521,42 @@
             </div>
         </div>
     </section>
+<!--Fim Solve na Midia-->
 
+<!--Inicio Carrosel de Empresas Beneficiadas-->
     <section class="default section-companies">
         <div class="section-body">
-            <div class="section-companies--area">
-                <div class="section-company">
-                    <img src="media/empresa1.png" />
-                </div>
-                <div class="section-company">
-                    <img src="media/empresa2.png" />
-                </div>
-                <div class="section-company">
-                    <img src="media/empresa3.png" />
-                </div>
-                <div class="section-company">
-                    <img src="media/empresa4.png" />
-                </div>
-                <div class="section-company">
-                    <img src="media/empresa5.png" />
-                </div>
-                <div class="section-company">
-                    <img src="media/empresa6.png" />
+            <div class="glide section-companies--area">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="/empresas/uff.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/prefeitura1.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/bergs.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/cefan.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/cehab.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/comdep.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/prefeitura3.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/energyclean.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/engeground.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/inb.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/inbrarad.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/jardimbotanico.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/linepro.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/marinha.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/minhacasaminhavida.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/museu.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/obraspub.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/passos.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/ari.jpeg" /></li>
+                        <li class="glide__slide"><img src="/empresas/prefeitura2.jpeg" /></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+<!--Fim Carrosel de Empresas Beneficiadas--> 
+
+
     <section class="section-share">
         <div class="section-share--legend">
             <img src="assets/images/share.png" />

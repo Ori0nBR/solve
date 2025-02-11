@@ -476,7 +476,6 @@ background-color: blue;
 .section-projects--photoarea img {
     width:inherit;
     height:inherit;
-    border-radius: 8px;
 }
 .section-projects--photoinfo {
     position:absolute;
@@ -495,7 +494,6 @@ background-color: blue;
 }
 .section-projects--photoarea:hover .section-projects--photoinfo {
     display:flex;
-    border-radius: 8px;
 }
 
 
@@ -684,13 +682,26 @@ background-color: blue;
     border-bottom:1px solid #DDD;
 }
 .section-companies--area {
-    display:flex;
-    align-items:center;
+    width: 100%;
+    overflow: hidden; /* Garante que o carrossel não vaze do contêiner */
 }
-.section-company {
-    flex:1;
-    text-align:center;
+
+.glide__slides {
+    display: flex;
+    align-items: center;
+    gap: 20; /* Espaçamento entre as imagens */
+    transition-timing-function: ease-in-out; /* 🔹 Suaviza a entrada e a saída */
 }
+
+.glide__slide img {
+    height: 100px; /* 🔹 Define altura fixa */
+    width: auto; /* 🔹 Mantém a proporção original */
+    display: block;
+    margin: 0 auto; /* 🔹 Centraliza as imagens */
+    object-fit: contain; /* 🔹 Garante que a imagem se ajuste sem cortar */
+}
+
+
 
 .section-price {
     display:flex;

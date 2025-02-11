@@ -39,3 +39,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Adiciona evento de clique nos pointers para navegação manual
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    new Glide(".section-companies--area", {
+        type: "carousel",
+        autoplay: 2000, // Tempo entre cada troca de slide (em ms)
+        hoverpause: false, // Pausa o autoplay ao passar o mouse
+        perView: 4, // Número de slides visíveis ao mesmo tempo
+        gap: 20, // Espaçamento entre os slides
+        speed: 1300, // Velocidade da transição
+    }).mount();
+});
