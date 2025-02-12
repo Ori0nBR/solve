@@ -517,6 +517,7 @@ section.default.light {
 
 .section-projects--photo:hover::before {
     opacity: 1;
+    pointer-events: none
 }
 
 /* Informações do Álbum */
