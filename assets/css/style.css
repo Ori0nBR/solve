@@ -956,7 +956,7 @@ section.default.light {
 
 
 .section-map {
-    background-image:url('../images/mapa.jpg');
+    background-image:url('/assets/img/mapa.jpg');
     background-size:cover;
     background-position:center;
     padding-top:30px;
