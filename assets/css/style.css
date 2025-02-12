@@ -668,9 +668,9 @@ section.default.light {
 }
 
 .section-testimonials--foto {
-    width: 500px;
+    width: 400px;
     border-radius: 10%;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 .section-testimonials--name {
     font-weight: bold;
@@ -973,7 +973,7 @@ section.default.light {
 }
 
 .section-map {
-    background-image:url('../images/mapa.jpg');
+    background-image:url('/assets/img/mapa.jpg');
     background-size:cover;
     background-position:center;
     padding-top:30px;
