@@ -7,3 +7,15 @@ Fancybox.bind('[data-fancybox="gallery1"]', {
 Fancybox.bind('[data-fancybox="gallery2"]', {
     // Opções adicionais para o segundo conjunto de imagens (galeria2)
 });
+Fancybox.bind('[data-fancybox="gallery3"]', {
+    // Opções adicionais para o segundo conjunto de imagens (galeria2)
+});
+Fancybox.bind('[data-fancybox="gallery4"]', {
+    // Opções adicionais para o segundo conjunto de imagens (galeria2)
+});
+Fancybox.bind('[data-fancybox="gallery5"]', {
+    // Opções adicionais para o segundo conjunto de imagens (galeria2)
+});
+Fancybox.bind('[data-fancybox="gallery6"]', {
+    // Opções adicionais para o segundo conjunto de imagens (galeria2)
+});

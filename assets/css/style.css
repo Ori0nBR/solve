@@ -475,10 +475,10 @@ section.default.light {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.section-projects--photoinfo h4 a{
+.section-projects--photoinfo h4{
     color: white;
 }
-.section-projects--photoinfo p a{
+.section-projects--photoinfo p{
     color: white;
 }
 
