@@ -245,9 +245,9 @@ footer {
     margin:auto;
     color:#FFF;
     display:flex;
+    justify-content: center;
 }
 .footer--item {
-    flex:1;
 }
 .footer-social {
     display:flex;
