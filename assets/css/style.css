@@ -789,7 +789,7 @@ section.default.light {
 .glide-news .glide__bullets {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .glide-news .glide__bullet {
@@ -1071,7 +1071,7 @@ section.default.light {
     background-size:cover;
     background-position:center;
     padding-top:30px;
-    padding-bottom:30px;
+    padding-bottom:150px;
 }
 .section-map--area {
     width:100vw;
@@ -1087,7 +1087,7 @@ section.default.light {
 .section-map--info-item {
     display:flex;
     align-items:center;
-    color:#999;
+    color:#000000;
     margin-bottom:10px;
 }
 .section-map--info-item-img {
