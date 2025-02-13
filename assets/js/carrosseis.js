@@ -40,6 +40,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+//Carrossel de Noticias
+document.addEventListener("DOMContentLoaded", function () {
+    new Glide('.glide-news', {
+        type: 'carousel',
+        perView: 1,
+        focusAt: 'center',
+        gap: 20,
+        autoplay: 5000,
+        hoverpause: true,
+        animationDuration: 800
+        }).mount();
+    });
+
+//Carrosel Insituições Beneficiadas
 document.addEventListener("DOMContentLoaded", function () {
     new Glide(".section-companies--area", {
         type: "carousel",
@@ -50,3 +64,4 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 1300, // Velocidade da transição
     }).mount();
 });
+
