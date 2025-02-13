@@ -190,7 +190,7 @@ header {
 
 .section-aboutus--left p{
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
     color:#AAA;
 }
 
@@ -312,7 +312,7 @@ CSS DE ÁREAS ESPECÍFICAS
      margin-right:20px;
 }
 .section-aboutus--left p {
-    font-size:14px;
+    font-size:20px;
     line-height:30px;
     
 }
@@ -353,57 +353,82 @@ font-size:30px;
     font-family: 'Montserrat';
     text-align: justify;
     line-height:30px;
+}
 
+
+/*Seção de Serviços*/
+.serv-title h1{
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .section-services {
-    display:flex;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 .section-service {
-    flex:1;
+    flex: 1;
     position: relative;
-    text-align:center;
-    padding:15px;
-    background-color:rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 10px;
 }
-
-.section-body  {
-    text-transform: uppercase; 
-    font-weight: 600; 
-    color:#AAA;  
-    font-size:16px;
-}
-
-.section-service img:hover {
-background-color: blue;
-
-}
-
-.section-service  img{
+.section-service img {
     width: 90%;
     cursor: pointer;
     box-shadow: inset 0px 0px 100px;
+    transition: transform 0.3s ease;
 }
-
-.text-service{
-   position: absolute;
-   top: 70%;
-   left: 25%;
-   
-   /*cor apenas para exmplo*/
-   color: #fff;
+.section-service:hover img {
+    transform: scale(1.1);
 }
-
-.section-service h4 {
-    margin-top:20px;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}
+.section-service:hover .overlay {
+    opacity: 1;
+}
+.overlay h4 {
+    margin: 0 0 10px 0; /* Adiciona espaçamento inferior */
+    font-size: 1.5rem;
+}
+.overlay p {
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+.section-service h4.title {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease;
     text-transform: uppercase;
-    font-size:18px;
 }
-.section-service p {
-    margin-top:10px;
-    font-size:13px;
-    color:#999;
+.section-service:hover h4.title {
+    opacity: 0;
 }
+/*Fim Seção de Serviços*/
+
 
 /* Estilização da Section */
 section.default.light {
@@ -412,9 +437,9 @@ section.default.light {
 }
 
 .titulo {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
     padding-bottom: 40px;
 }
 
@@ -549,6 +574,10 @@ section.default.light {
     padding-bottom:80px;
 }
 
+.section-team-area .section-title h1{
+    font-size: 25px;
+}
+
 .section-title h1{
     color: #ffffff;
     padding-bottom: 40px;
@@ -606,7 +635,7 @@ section.default.light {
 }
 .section-team--name {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
     font-size:17px;
     margin-top:30px;
 }
@@ -643,10 +672,11 @@ section.default.light {
 .section-title-black h1{
     color: #000000;
     padding-bottom: 40px;
+    padding-left: 25px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 25px;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 

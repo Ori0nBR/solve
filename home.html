@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
     <title>Solve Consultoria e Projetos</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/modal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"><!--Fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" /> <!--Fonte Montserrat-->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'><!--Fonte Oswald-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css"><!--Css de Estilo da Página-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/modal.css"><!--Css da Galeria-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"><!--Css do Glide.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"><!--Css Fancybox-->
  </head>
 <body>
-    <script src="/assets/js/jquery.js" defer></script>
-    <script src="/assets/js/modal.js"></script>
-    <script src="/assets/js/botoes.js"></script> <!--script de botões com função no front-end do site -->
-    <script src="/assets/js/carrosseis.js"></script><!--script dos carrosseis do site -->
-    <!--Navbar-->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="/assets/js/jquery.js" defer></script><!--Biblioteca JQuery-->>
+    <script src="/assets/js/modal.js" defer></script> <!--Modal da Galeria-->
+    <script src="/assets/js/botoes.js" defer></script> <!--Script de botões com função no front-end do site -->
+    <script src="/assets/js/carrosseis.js" defer></script><!--Script dos carrosseis do site -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script><!--Biblioteca Glide.js-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><!--Biblioteca Fancybox Galeria de Imagens-->
 
+<!--Inicio Navbar-->
 <header>
     <div class="header">
-        <div class="logo">
+        <div class="logo"> <!--Logo Solve Navbar-->
             <img class="logoimg" src="assets/img/logo2.png" />
             <img class="logotext" src="assets/img/logo.png" />
         </div>
@@ -31,7 +31,7 @@
             <img class="menu-opener" src="assets/images/menu.png" />
             <nav>
                 <ul>
-                    <li class="active"><a href="">Home</a></li>
+                    <li class="active"><a href="/home.html">Home</a></li>
                     <li><a href="#snos">Sobre Nós</a></li>
                     <li><a href="#serv">Serviços</a></li>
                     <li><a href="#nproj">Nossos Projetos</a></li>
@@ -129,28 +129,39 @@
 <!--Fim Sobre Nós-->
 
 <!--Inicio Seção de Serviços-->
-    <section class="default dark" id="serv">
-        <div class="section-body">
-            <h3>Serviços </h3>
-            <span class="regua" style="margin-bottom:50px;"></span>
-            <div class="section-services">
-                <div class="section-service">
-                
-       <img  src="assets/img/services.jpg" />
-		<h4 style="font-size:22px;">Facilities</h4>
+<section class="default dark" id="serv">
+    <div class="section-body">
+        <div class="serv-title"><h1>Serviços </h1></div>
+        <span class="regua" style="margin-bottom:50px;"></span>
+        <div class="section-services">
+            <div class="section-service">
+                <img src="assets/img/services.jpg" />
+                <h4 class="title">Facilities</h4>
+                <div class="overlay">
+                    <h4>Facilities</h4>
+                    <p>Garantimos a operação eficiente e a manutenção do seu espaço, oferecendo serviços de limpeza, segurança, manutenção predial, gestão de resíduos e suporte administrativo.</p>
                 </div>
-                <div class="section-service">
-                
-       <img  src="assets/img/services2.jpg" />
-		
-<h4 style="font-size:22px;">Consultoria</h4>    </div>
-                            <div class="section-service">
-                
-       <img  src="assets/img/services3.jpg" />
-		 <h4 style="font-size:22px;">Gestão de Obras</h4> 
+            </div>
+            <div class="section-service">
+                <img src="assets/img/services2.jpg" />
+                <h4 class="title">Consultoria</h4>
+                <div class="overlay">
+                    <h4>Consultoria</h4>
+                    <p>Fornecemos soluções estratégicas para otimizar seus projetos na construção civil. Com uma abordagem especializada, auxiliamos desde a concepção até a execução.</p>
                 </div>
+            </div>
+            <div class="section-service">
+                <img src="assets/img/services3.jpg" />
+                <h4 class="title">Gestão de Obras</h4>
+                <div class="overlay">
+                    <h4>Gestão de Obras</h4>
+                    <p>Cuidamos de todas as etapas da sua obra, desde o planejamento até a entrega final. Gerenciamos prazos, custos e qualidade para garantir um processo eficiente.</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+<!--Final Seção de Serviços-->
 
     <section class="default light" id="nproj">
         <div class="titulo">NOSSOS PROJETOS</div>
