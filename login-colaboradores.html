@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/assets/css/login.css">
 </head>
 <body>
+    <script src="/assets/js/login.js" defer></script>
     <div class="logo-container">
         <img src="assets/img/logo.png" alt="Logo" />
     </div>
@@ -19,29 +20,5 @@
         </form>
         <p class="error-message" id="errorMessage" style="display:none;">Credenciais inválidas. Tente novamente.</p>
     </div>
-
-    <script>
-        const validCredentials = {
-            username: 'colaborador', // Usuário fictício
-            password: 'senha123' // Senha fictícia
-        };
-
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            // Verifica as credenciais
-            if (username === validCredentials.username && password === validCredentials.password) {
-                // Redireciona para a página de login do Trello
-                window.location.href = "intranet.html"; // A página onde inicia o login com o Trello
-            } else {
-                // Exibe uma mensagem de erro se as credenciais forem inválidas
-                document.getElementById("errorMessage").style.display = "block";
-            }
-        });
-    </script>
-    
 </body>
 </html>
