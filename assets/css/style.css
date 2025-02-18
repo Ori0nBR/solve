@@ -9,6 +9,8 @@ body {
     font-size:13px;
     overflow-x:hidden;
 }
+
+/*Inicio Navbar*/
 header {
     height:100px;
     background-color:#000;
@@ -36,8 +38,10 @@ header {
 .logotext {
     height: 60px;
 }
-.menu-opener {
-    display:none;
+.menu-mobile {
+    display: none; /* Oculta o ícone em telas grandes */
+    width: 30px;
+    cursor: pointer;
 }
 .menu {
     flex:1;
@@ -67,6 +71,56 @@ header {
     border-bottom:5px solid #B28756;
     color:#CCC;
 }
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .menu {
+        position: relative;
+        justify-content: flex-end; /* Alinha o botão de menu à direita */
+    }
+
+    .menu-mobile {
+        display: block; /* Exibe o ícone do menu */
+    }
+
+    nav {
+        display: none; /* Esconde o menu por padrão */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        z-index: 10;
+        padding: 10px 0;
+    }
+
+    nav.active {
+        display: block; /* Exibe o menu quando ativado */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: left;
+    }
+
+    nav li a {
+        display: block;
+        padding: 15px;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        background-color: #333;
+    }
+}
+/*Fim Navbar*/
 
 #loginModal {
     position: fixed;
@@ -1110,9 +1164,9 @@ section.default.light {
     .logo {
         margin-left:30px;
     }
-    .menu-opener {
+    .menu-mobile {
         display:block;
-        width:45px;
+        width: 30px;
         margin-right:30px;
     }
     nav {
@@ -1212,9 +1266,9 @@ section.default.light {
     .logo {
         margin-left:30px;
     }
-    .menu-opener {
+    .menu-mobile {
         display:block;
-        width:45px;
+        width: 30px;
         margin-right:30px;
     }
     nav {

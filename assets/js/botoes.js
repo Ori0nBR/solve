@@ -12,3 +12,22 @@ function toggleDiv() {
         icon.classList.add("fa-angle-down"); 
     }
 }
+
+/*Botão de Menu mobile navbar*/
+document.addEventListener("DOMContentLoaded", function() {
+    const menuMobile = document.querySelector(".menu-mobile");
+    const nav = document.querySelector("nav");
+    const menuLinks = document.querySelectorAll("nav ul li a");
+
+    // Alterna o menu ao clicar no ícone
+    menuMobile.addEventListener("click", function() {
+        nav.classList.toggle("active");
+    });
+
+    // Fecha o menu ao clicar em qualquer item
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            nav.classList.remove("active");
+        });
+    });
+});
