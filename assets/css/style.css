@@ -612,7 +612,9 @@ section.default.light {
         max-width: 300px; /* Limita o tamanho no mobile */
     }
 }
+/*Fim da Galeria*/
 
+/*Inicio Seção Diretoria*/
 .bg-team {
     background-image:url('/assets/img/bg.jpg');
     background-size:cover;
@@ -623,7 +625,7 @@ section.default.light {
     background-color:rgba(0, 0, 0, 0.8);
     background-size: cover;
     background-position: center;
-    padding-top:50px;
+    padding-top:20px;
     padding-bottom:80px;
 }
 
@@ -633,7 +635,7 @@ section.default.light {
 
 .section-title h1{
     color: #ffffff;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     
 }
 
@@ -645,7 +647,7 @@ section.default.light {
 }
 
 .section-team p{
-    text-align: center;
+    text-align: justify;
 }
 
 .section-team .sliders {
@@ -658,8 +660,12 @@ section.default.light {
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px; /* Largura fixa para cada card */
+    max-width: 550px; /* Largura máxima */
+    width: 100%; /* Responsivo: ocupa 100% do espaço disponível */
+    margin: 0 auto; /* Centraliza os cards */
 }
+
+
 .section-team .slidearea {
     display:flex;
     flex-direction:column;
@@ -667,7 +673,7 @@ section.default.light {
     justify-content: center;
     align-items:center;
     color:#000;
-    padding:30px;
+    padding:10px;
 }
 
 .section-team-area .pointer {
@@ -682,10 +688,7 @@ section.default.light {
 .section-team-area .pointer.active {
     background-color:#B28756;
 }
-.section-team--avatar {
-    width:150px;
-    height:auto;
-}
+
 .section-team--name {
     text-transform: uppercase;
     font-weight: bold;
@@ -696,24 +699,44 @@ section.default.light {
     font-size:14px;
     color:#999;
     margin-top:5px;
+    
 }
-.section-team--social {
-    display:flex;
-    margin-top:20px;
-}
-.section-team--social a {
-    display:inline-flex;
+.artigos {
+    display: flex;
     justify-content: center;
-    align-items:center;
-    width:25px;
-    height:25px;
-    background-color:#CCC;
-    border-radius:13px;
-    margin-right:10px;
+    gap: 10px; /* Espaçamento entre as imagens */
+    margin-top: 10px;
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
 }
-.section-team--social a:hover {
-    background-color:#B28756;
+
+.artigos a img{
+    width: 100px; /* Tamanho padrão das imagens */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
+
+/* Efeito de zoom ao passar o mouse */
+.artigos a img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 600px) {
+    .section-team .slide {
+        max-width: 90%; /* Ocupa 90% da largura da tela */
+        padding: 15px; /* Reduz o padding para melhor encaixe */
+    }
+    .section-team--articles {
+        gap: 5px; /* Reduz o espaçamento entre as imagens */
+    }
+
+    .section-team--articles a img {
+        width: 50px; /* Diminui o tamanho das imagens em telas pequenas */
+    }
+}
+
+/*Fim Seção Diretoria*/
 
 /*Inicio Seção de Noticias*/
 .testimonials .section-body {
@@ -1220,33 +1243,10 @@ section.default.light {
         border-left:0;
     }
 
-    .section-team {
-        max-width:580px;
-    }
-
-    .section-price {
-        flex-wrap:wrap;
-    }
-    .section-price--item {
-        margin-left:20px;
-        min-width:calc(50% - 40px);
-        margin-bottom:20px;
-    }
-    .section-price--item:last-child {
-        margin-right:20px;
-    }
-
-    .section-facts {
-        flex-wrap:wrap;
-    }
-    .section-fact {
-        min-width:50%;
-    }
-
-
     .section-map {
         padding-left:30px;
         padding-right:30px;
+        
     }
     .section-map--area {
         width:auto;
@@ -1323,6 +1323,7 @@ section.default.light {
         width:100%;
     }
 
+
     .section-services {
         flex-wrap:wrap;
     }
@@ -1332,11 +1333,6 @@ section.default.light {
     }
     .section-service:first-child {
         border-left:0;
-    }
-
-
-    .section-team {
-        max-width:280px;
     }
 
     .section-companies--area {
