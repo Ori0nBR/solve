@@ -58,10 +58,16 @@ document.addEventListener("DOMContentLoaded", function () {
     new Glide(".section-companies--area", {
         type: "carousel",
         autoplay: 2000, // Tempo entre cada troca de slide (em ms)
-        hoverpause: false, // Pausa o autoplay ao passar o mouse
+        hoverpause: false, // Não pausa o autoplay ao passar o mouse
         perView: 4, // Número de slides visíveis ao mesmo tempo
         gap: 20, // Espaçamento entre os slides
         speed: 1300, // Velocidade da transição
+        focusAt: 'center', // 🔹 Mantém o slide centralizado quando há poucos itens
+        breakpoints: {
+            1024: { perView: 3 }, // Em telas até 1024px, exibir 3 slides
+            768: { perView: 2 },  // Em telas até 768px, exibir 2 slides
+            480: { perView: 1, focusAt: 'center' }  // 🔹 Em telas menores que 480px, exibir 1 slide e centralizá-lo
+        }
     }).mount();
 });
 
