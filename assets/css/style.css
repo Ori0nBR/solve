@@ -448,6 +448,7 @@ font-size:30px;
 .serv-title h1{
     font-size: 20px;
     text-transform: uppercase;
+    margin-left: 30px;
 }
 
 .section-services {
@@ -516,6 +517,7 @@ font-size:30px;
     opacity: 0;
 }
 /*Fim Seção de Serviços*/
+
 
 
 /* Estilização da Section */
