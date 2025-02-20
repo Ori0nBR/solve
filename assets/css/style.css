@@ -277,29 +277,50 @@ header {
     font-weight: 600;
 }
 .default .section-title {
-    font-size:20px;
-}
-.default .section-desc {
-    font-size:12px;
-    color:#CCC;
-    margin-top:10px;
-    margin-bottom:40px;
+    font-size: 22px; /* Aumentado para melhor leitura */
 }
 
-.section-aboutus--left p{
+.default .section-desc {
+    font-size: 14px; /* Ajustado para maior legibilidade */
+    color: #888; /* Tom um pouco mais escuro para contraste */
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* 🔹 Texto do lado esquerdo da seção */
+.section-aboutus--left p {
     text-transform: uppercase;
     font-weight: bold;
-    color:#AAA;
+    color: #777; /* Ajustado para melhor visibilidade */
 }
 
+/* 🔹 Título principal */
 .section-aboutus--left h1 {
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size:48px;
-    line-height:60px;
-    margin-top:30px;
+    font-size: 42px; /* Reduzido para melhor adaptação */
+    line-height: 52px;
+    margin-top: 30px;
+    color: #222; /* Cor mais forte para destaque */
 }
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    .default .section-title {
+        font-size: 18px;
+    }
+
+    .default .section-desc {
+        font-size: 12px;
+    }
+
+    .section-aboutus--left h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
 
 .default .section-body {
     max-width:1140px;
@@ -363,31 +384,7 @@ footer {
 .footer-social a:hover {
     background-color:#B28756;
 }
-.footer-social img {
-    height:10px;
-}
-.footer--item.area2 {
-    color:#999;
-    line-height:20px;
-    font-size:13px;
-    padding:0 10px 10px 10px;
-}
-.footer--item.area3 form {
-    background-color:#333;
-    text-align:center;
-    padding:30px;
-}
-.footer--item.area3 input {
-    width:100%;
-    height:40px;
-    border:0;
-    background:transparent;
-    border-bottom:1px solid #CCC;
-    outline:0;
-    color:#FFF;
-    font-size:14px;
-    text-align:center;
-}
+
 
 /*
 CSS DE ÁREAS ESPECÍFICAS
@@ -419,18 +416,13 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 
 .section-aboutus--right p {
-    font-size:14px;
-    
+    font-size:16px;
     font-weight: 300;
     font-family: 'Montserrat';
     text-align: justify;
     line-height:30px;
 }
 
-.section-aboutus--right img {
-    width:480px;
-    box-shadow:0px 5px 10px #333;
-}
 
 .slide{
   display: block;
@@ -444,8 +436,7 @@ font-size:30px;
 }
 .slide2{
   display: none;
-    font-size:14px;
-    text-transform: uppercase;
+    font-size:16px;
     font-weight: 300;
     font-family: 'Montserrat';
     text-align: justify;
@@ -1353,15 +1344,12 @@ section.default.light {
         flex-direction:column;
     }
     .section-aboutus--left {
-        margin-left:30px;
         margin-right:30px;
         margin-bottom:30px;
     }
 
     .section-aboutus--right {
         width:auto;
-        margin-left:30px;
-        margin-right:30px;
     }
     .section-aboutus--right img {
         width:100%;
