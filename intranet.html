@@ -12,7 +12,9 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
+            background-image: url(/media/intranet.jpg);
+            background-size: cover;
+            background-position: center;
         }
 
         .login-container {
@@ -22,6 +24,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 300px;
             text-align: center;
+            margin-left: 10px;
         }
 
         .login-container h2 {
@@ -44,11 +47,19 @@
     </style>
 </head>
 <body>
-
-    <div class="login-container">
-        <h2>Entrar com Trello</h2>
-        <button onclick="loginTrello()">Entrar</button>
+    <div class="trello">
+        <div class="login-container">
+            <h2>Trello</h2>
+            <button onclick="loginTrello()">Entrar</button>
+        </div>
     </div>
+    <div class="email">
+        <div class="login-container">
+            <h2>Email Solve</h2>
+            <button onclick="loginTrello()">Entrar</button>
+        </div>
+    </div>
+
 
     <script>
         // Função para iniciar o login com Trello
