@@ -163,11 +163,8 @@ header {
 
 /* 🔹 O banner ocupa a tela inteira */
 .banner {
-    height: 100vh; /* Ocupa toda a tela */
+    height: 85vh; /* Ocupa toda a tela */
     background-color: #333;
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-position: center;
     overflow: hidden;
     position: relative;
 }
@@ -182,7 +179,7 @@ header {
 /* 🔹 Cada slide ocupa a tela inteira */
 .banner .slide {
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,7 +209,7 @@ header {
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
-    margin: 20px 0;
+    margin: 0px 0;
 }
 
 /* 🔹 GIF de fundo */
@@ -221,7 +218,7 @@ header {
     width: 100%;
     height: 100vh; /* Fundo ocupa toda a tela */
     background: url('/media/pendulo.gif') no-repeat center center;
-    background-size: contain; /* Mantém proporção do GIF */
+    background-size: cover;
     z-index: 1;
 }
 
