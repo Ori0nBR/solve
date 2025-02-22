@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         autoplay: 2000, // Tempo entre cada troca de slide (em ms)
         hoverpause: false, // Não pausa o autoplay ao passar o mouse
         perView: 4, // Número de slides visíveis ao mesmo tempo
-        gap: 20, // Espaçamento entre os slides
+        gap: 10, // Espaçamento entre os slides
         speed: 1300, // Velocidade da transição
         focusAt: 'center', // 🔹 Mantém o slide centralizado quando há poucos itens
         breakpoints: {
