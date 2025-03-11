@@ -142,6 +142,7 @@ header {
 }
 
 .button {
+    cursor: pointer;
     display:inline-block;
     background-color:#B28756;
     color:#FFF;
