@@ -24,3 +24,27 @@ Fancybox.bind('[data-fancybox="gallery6"]', {
 });
 Fancybox.bind('[data-fancybox="gallery6-2"]', {
 });
+Fancybox.bind('[data-fancybox="gallery7"]', {
+});
+Fancybox.bind('[data-fancybox="gallery7-2"]', {
+});
+Fancybox.bind('[data-fancybox="gallery8"]', {
+});
+Fancybox.bind('[data-fancybox="gallery8-2"]', {
+});
+Fancybox.bind('[data-fancybox="gallery9"]', {
+});
+Fancybox.bind('[data-fancybox="gallery9-2"]', {
+});
+Fancybox.bind('[data-fancybox="gallery10"]', {
+});
+Fancybox.bind('[data-fancybox="gallery10-2"]', {
+});
+Fancybox.bind('[data-fancybox="gallery11"]', {
+});
+Fancybox.bind('[data-fancybox="gallery11-2"]', {
+});
+Fancybox.bind('[data-fancybox="gallery12"]', {
+});
+Fancybox.bind('[data-fancybox="gallery12-2"]', {
+});

@@ -31,3 +31,25 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.getElementById('toggle-projects-btn').addEventListener('click', function() {
+    var projects = [
+        document.getElementById('project7'),
+        document.getElementById('project8'),
+        document.getElementById('project9'),
+        document.getElementById('project10'),
+        document.getElementById('project11'),
+        document.getElementById('project12')
+    ];
+    
+    var allHidden = projects.every(function(project) {
+        return project.style.display === 'none';
+    });
+
+    projects.forEach(function(project) {
+        project.style.display = allHidden ? 'block' : 'none';
+    });
+
+    var button = document.getElementById('toggle-projects-btn');
+    button.textContent = allHidden ? 'Menos Projetos' : 'Mais Projetos';
+});
